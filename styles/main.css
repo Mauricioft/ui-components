@@ -1,0 +1,8 @@
+html {
+  /* font-size: 62.5%; */
+  font-size: var(--font-size-base);
+  box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
