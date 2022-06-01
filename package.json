@@ -9,9 +9,7 @@
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-tokens": "node ./tokens",
     "build-storybook": "build-storybook",
-    "postinstall": "husky install",
-    "publish": "npm publish --access public",
-    "prepare": "husky install"
+    "publish": "npm publish --access public"
   },
   "keywords": [],
   "author": "Mauricio Flor",
@@ -29,15 +27,10 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
-    "husky": "8.0.1",
-    "lint-staged": "12.5.0",
     "prettier": "^2.6.2"
   },
   "dependencies": {
     "classnames": "^2.3.1",
     "prop-types": "^15.8.1"
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix"
   }
 }
