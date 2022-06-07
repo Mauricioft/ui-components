@@ -4,13 +4,13 @@ import PropTypes from 'prop-types'
 import { getSize } from './helpers'
 import Horizontal from './Horizontal'
 import Vertical from './Vertical'
-import './Spacer.css'
+import styles from './Spacer.module.css'
 
 const Spacer = ({ size, isVisible }) => {
   return (
     <div
-      className={classnames('spacer', {
-        ['is-visible']: isVisible,
+      className={classnames(styles.spacer, {
+        [styles['is-visible']]: isVisible,
       })}
       style={{
         display: 'inline-block',

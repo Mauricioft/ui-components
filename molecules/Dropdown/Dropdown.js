@@ -2,15 +2,15 @@ import React from 'react'
 import { Icon } from '../../atoms/Icon'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import './Dropdown.css'
+import styles from './Dropdown.module.css'
 
 const Dropdown = ({ value, options, onChange }) => {
   return (
-    <div className={classnames('dropdown')}>
+    <div className={classnames(styles.dropdown)}>
       <Icon type="angle-down" size="md" hasBackground />
       <select
         value={value}
-        className={classnames('dropdown-select')}
+        className={classnames(styles.dropdown-select)}
         onChange={onChange}
       >
         {options.map(({ text, value }) => (

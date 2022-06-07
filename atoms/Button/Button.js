@@ -2,14 +2,14 @@ import React from 'react'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import { options } from './constants'
-import './Button.css'
+import styles from './Button.module.css'
 
 const Button = ({ type, isBlock, children }) => {
   return (
     <button
-      className={classnames('button', {
-        [`type-${type}`]: type,
-        ['is-block']: isBlock && type !== 'tertiary',
+      className={classnames(styles.button, {
+        [styles[`type-${type}`]]: type,
+        [styles['is-block']]: isBlock && type !== 'tertiary',
       })}
     >
       {children}

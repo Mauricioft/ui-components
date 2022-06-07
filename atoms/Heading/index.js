@@ -2,14 +2,14 @@ import React from 'react'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import { options } from './constants'
-import './Heading.css'
+import styles from './Heading.module.css'
 
 const Heading = ({ size, color, children }) => {
   return (
     <h1
-      className={classnames('heading', {
-        [`color-${color}`]: color,
-        [`size-${size}`]: size,
+      className={classnames(styles.heading, {
+        [styles[`color-${color}`]]: color,
+        [styles[`size-${size}`]]: size,
       })}
     >
       {children}

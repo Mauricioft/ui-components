@@ -2,13 +2,13 @@ import React from 'react'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import { getSize } from './helpers'
-import './Spacer.css'
+import styles from './Spacer.module.css'
 
 const Horizontal = ({ size, isVisible }) => {
   return (
     <div
-      className={classnames('spacer', {
-        ['is-visible']: isVisible,
+      className={classnames(styles.spacer, {
+        [styles['is-visible']]: isVisible,
       })}
       style={{
         display: 'block',
