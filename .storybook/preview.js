@@ -1,4 +1,4 @@
-import '../styles/main.css'
+import '../styles/globals.css'
 import '../styles/tokens.css'
 
 export const parameters = {

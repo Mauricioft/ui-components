@@ -1,12 +1,13 @@
 {
   "name": "@mauricioft/components",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "private": false,
   "description": "A components library to create apps from productivity management",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+		"dev": "yarn storybook",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-tokens": "node ./tokens",
     "build-storybook": "build-storybook",
@@ -32,10 +33,11 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "minireset.css": "0.0.7",
     "prettier": "^2.6.2",
-		"prop-types": "^15.8.1",
-		"react": "17.0.0",
-		"react-dom": "17.0.0"
+    "prop-types": "^15.8.1",
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
   },
   "dependencies": {
     "classnames": "^2.3.1"

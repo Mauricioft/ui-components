@@ -24,6 +24,24 @@ Primary.args = {
   children: 'Heading',
 }
 
+export const TwoExtraLarge = HeadingTemplate.bind({})
+TwoExtraLarge.args = {
+  children: 'Heading',
+	size: '2xl',
+}
+
+export const ExtraLarge = HeadingTemplate.bind({})
+ExtraLarge.args = {
+  children: 'Heading',
+	size: 'xl',
+}
+
+export const Large = HeadingTemplate.bind({})
+Large.args = {
+  children: 'Heading',
+	size: 'lg',
+}
+
 export const Medium = HeadingTemplate.bind({})
 Medium.args = {
   children: 'Heading',

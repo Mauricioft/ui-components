@@ -11,6 +11,9 @@
   font-size: var(--font-size-md);
   max-width: 300px;
   min-width: max-content;
+	font-family: var(--font-family-sans-2);
+	font-weight: var(--font-weight-bold);
+	height: 45px;
 }
 .is-block {
   width: 100%;

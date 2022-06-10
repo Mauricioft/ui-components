@@ -1,11 +1,22 @@
 .heading {
-  line-height: var(--line-height-normal);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-sans-0);
 }
 .color-primary {
   color: var(--colors-primary);
 }
 .color-default {
   color: var(--colors-font-base);
+}
+.size-2xl {
+  font-size: var(--font-size-2xl);
+}
+.size-xl {
+  font-size: var(--font-size-xl);
+}
+.size-lg {
+  font-size: var(--font-size-lg);
 }
 .size-md {
   font-size: var(--font-size-md);
