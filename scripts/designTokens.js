@@ -375,10 +375,19 @@ const decisions = {
     fontMuted: choices.colors.brand.regentGray,
     fontHighlight: choices.colors.brand.loblolly,
   },
-  backgrounds: {
+  backgroundColors: {
     primary: choices.colors.brand.hintOfRed,
     highlight: choices.colors.brand.romance,
   },
+	container: {
+		maxWidth: '800px',
+	},
+	button: {
+		maxWidth: '300px',
+	},
+	input: {
+		height: '38px',
+	},
 }
 
 module.exports = {

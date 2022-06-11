@@ -11,7 +11,7 @@
   font-size: var(--font-size-md);
   max-width: 300px;
   min-width: max-content;
-	font-family: var(--font-family-sans-2);
+	font-family: var(--font-family-sans-0), var(--font-family-sans-1), var(--font-family-sans-2);
 	font-weight: var(--font-weight-bold);
 	height: 45px;
 }
@@ -34,6 +34,7 @@
   border-bottom: 1px solid var(--colors-brand-medium-purple);
   padding: var(--spacing-none);
   border-radius: var(--border-radius-none);
+	height: auto;
 }
 .button:hover {
   filter: brightness(1.1);
