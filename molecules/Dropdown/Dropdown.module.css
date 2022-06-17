@@ -2,7 +2,7 @@
 	display: inline-block;
 	position: relative;
 }
-.dropdown .icon {
+.dropdown-icon {
 	position: absolute;
 	right: 1px;
 	pointer-events: none;

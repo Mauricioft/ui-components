@@ -6,10 +6,17 @@ import { mapIcon, mapSize } from './helpers'
 import { Picture } from '../Picture'
 import styles from './Icon.module.css'
 
-const Icon = ({ type, size, hasBackground }) => {
+const Icon = ({
+	id,
+	className,
+	type,
+	size,
+	hasBackground
+}) => {
   return (
     <div
-      className={classnames(styles.icon, {
+			id={id}
+      className={classnames(className, styles.icon, {
         [styles['has-background']]: hasBackground,
       })}
       style={{ width: mapSize(size), height: mapSize(size) }}
@@ -23,6 +30,8 @@ Icon.propTypes = {
   type: PropTypes.string.isRequired,
   size: PropTypes.oneOf(options.sizes),
   hasBackground: PropTypes.bool,
+	id: PropTypes.string,
+  className: PropTypes.string,
 }
 
 Icon.defaultProps = {

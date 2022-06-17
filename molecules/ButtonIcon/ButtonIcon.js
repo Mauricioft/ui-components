@@ -3,11 +3,16 @@ import PropTypes from 'prop-types'
 import { Button } from '../../atoms/Button'
 import { options } from '../../atoms/Button/constants'
 import { Icon } from '../../atoms/Icon'
+import Spacer from '../../layout/Spacer'
 
 const ButtonIcon = ({ type, icon, children }) => {
   return (
-    <Button type={type}>
-      {children}&nbsp;
+    <Button
+			type={type}
+			isBlock={false}
+		>
+      {children}
+			<Spacer.Vertical size='xs' />
       <Icon type={icon} />
     </Button>
   )
