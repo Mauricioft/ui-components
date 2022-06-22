@@ -13,13 +13,16 @@
     "build-tokens": "node ./tokens",
     "build-storybook": "build-storybook",
     "publish": "npm publish --access public",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "chromatic": "npx chromatic --project-token=0ae35d11ad28"
   },
   "keywords": [
     "react",
     "components"
   ],
-  "author": "Mauricio Flor",
+  "author": {
+    "name": "Mauricio Flor"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.18.5",
@@ -34,6 +37,7 @@
     "@storybook/testing-library": "0.0.11",
     "babel-jest": "26.6.3",
     "babel-loader": "8.2.5",
+    "chromatic": "6.6.3",
     "eslint": "8.15.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
@@ -53,6 +57,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mauricioft/ui-components.git"
-  }
+    "url": "git+https://github.com/Mauricioft/ui-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mauricioft/ui-components/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/Mauricioft/ui-components#readme",
+  "_id": "@mauricioft/components@0.0.0-development"
 }
