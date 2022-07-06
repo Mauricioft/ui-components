@@ -8,11 +8,12 @@ const Button = ({
 	type,
 	isBlock,
 	children,
+	className,
 	onClick
 }) => {
   return (
     <button
-      className={classnames(styles.button, {
+      className={classnames(className, styles.button, {
         [styles[`type-${type}`]]: type,
         [styles['is-block']]: isBlock && type !== 'tertiary',
       })}

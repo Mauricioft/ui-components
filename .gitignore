@@ -248,3 +248,4 @@ $RECYCLE.BIN/
 *.sublime-project
 *.sublime-workspace
 yarn.lock
+storybook-static

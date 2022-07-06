@@ -11,10 +11,10 @@
     "lint:fix": "eslint --fix .",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-tokens": "node ./tokens",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s ./assets",
     "publish": "npm publish --access public",
     "semantic-release": "semantic-release",
-    "chromatic": "npx chromatic --project-token=0ae35d11ad28"
+    "chromatic": "npx chromatic --project-token=912f98034f9f"
   },
   "keywords": [
     "react",
