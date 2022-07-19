@@ -4,10 +4,10 @@
   font-family: var(--font-family-sans-0), var(--font-family-sans-1), var(--font-family-sans-2);
 }
 .color-primary {
-  color: var(--colors-primary);
+  color: var(--color-primary);
 }
 .color-default {
-  color: var(--colors-font-base);
+  color: var(--color-font-base);
 }
 .size-2xl {
   font-size: var(--font-size-2xl);

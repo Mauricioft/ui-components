@@ -1,5 +1,5 @@
 .input {
-	border: 1px solid var(--colors-primary);
+	border: 1px solid var(--color-primary);
 	border-radius: var(--border-radius-lg);
 	padding: 12px 17px;
 	line-height: var(--line-height-tight);
@@ -9,5 +9,5 @@
 	height: var(--input-height);
 }
 .input::placeholder {
-	color: var(--colors-font-highlight);
+	color: var(--color-font-highlight);
 }

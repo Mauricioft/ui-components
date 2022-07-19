@@ -1,4 +1,8 @@
 .picture img {
-	width: 100%;
 	display: block;
+	width: 100%;
+}
+
+.is-rounded img {
+	border-radius: var(--border-radius-full);
 }
