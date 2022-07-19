@@ -1,17 +1,19 @@
+const brandColors = {
+  mediumPurple: '#9879e9',
+  mandy: '#eb4e58',
+  white: '#fff',
+  whiteLilac: '#e8e8e8',
+  hintOfRed: '#f9f9f9',
+  romance: '#fcfdfd',
+  eastBay: '#455970',
+  regentGray: '#7e858c',
+  loblolly: '#b7b7b7',
+  blueMoon: '#eff1fd',
+}
+
 const choices = {
-  colors: {
-    brand: {
-      mediumPurple: '#9879e9',
-      mandy: '#eb4e58',
-      white: '#fff',
-      whiteLilac: '#e8e8e8',
-      hintOfRed: '#f9f9f9',
-      romance: '#fcfdfd',
-      eastBay: '#455970',
-      regentGray: '#7e858c',
-      loblolly: '#b7b7b7',
-      blueMoon: '#eff1fd',
-    },
+  color: {
+    brand: brandColors,
     transparent: 'transparent',
     base: {
       black: '#000',
@@ -295,12 +297,12 @@ const choices = {
     mono: ["'Roboto Mono'", "'Courier New'", 'monospace'],
   },
   fontSize: {
-    base: '14px',
-    xs: '1.2rem',
-    sm: '1.4rem',
-    md: '1.6rem',
+    base: '10px',
+    xs: '1.1rem',
+    sm: '1.3rem',
+    md: '1.5rem',
     lg: '1.8rem',
-    xl: '2.2rem',
+    xl: '2.1rem',
     '2xl': '6rem',
   },
   fontWeight: {
@@ -333,7 +335,7 @@ const choices = {
   boxShadow: {
     none: 'none',
     xs: '0px 3px 6px rgba(0, 0, 0, 0.05)',
-    sm: '0px 4px 5px rgba(0, 0, 0, 0.07)',
+    sm: `0px 4px 5px ${brandColors.whiteLilac}`,
   },
   borderRadius: {
     none: '0',
@@ -367,17 +369,17 @@ const choices = {
 }
 
 const decisions = {
-  colors: {
-    primary: choices.colors.brand.mediumPurple,
-    primaryHighlight: choices.colors.brand.blueMoon,
-    secondary: choices.colors.brand.mandy,
-    fontBase: choices.colors.brand.eastBay,
-    fontMuted: choices.colors.brand.regentGray,
-    fontHighlight: choices.colors.brand.loblolly,
+  color: {
+    primary: choices.color.brand.mediumPurple,
+    primaryHighlight: choices.color.brand.blueMoon,
+    secondary: choices.color.brand.mandy,
+    fontBase: choices.color.brand.eastBay,
+    fontMuted: choices.color.brand.regentGray,
+    fontHighlight: choices.color.brand.loblolly,
   },
   backgroundColors: {
-    primary: choices.colors.brand.hintOfRed,
-    highlight: choices.colors.brand.romance,
+    primary: choices.color.brand.hintOfRed,
+    highlight: choices.color.brand.romance,
   },
 	container: {
 		maxWidth: '800px',

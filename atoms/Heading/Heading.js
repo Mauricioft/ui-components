@@ -6,14 +6,14 @@ import styles from './Heading.module.css'
 
 const Heading = ({ size, color, children }) => {
   return (
-    <h1
+    <heading
       className={classnames(styles.heading, {
         [styles[`color-${color}`]]: color,
         [styles[`size-${size}`]]: size,
       })}
     >
       {children}
-    </h1>
+    </heading>
   )
 }
 

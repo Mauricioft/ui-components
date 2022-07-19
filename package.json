@@ -13,7 +13,6 @@
     "build-tokens": "node ./tokens",
     "build-storybook": "build-storybook -s ./assets",
     "publish": "npm publish --access public",
-    "semantic-release": "semantic-release",
     "chromatic": "npx chromatic --project-token=912f98034f9f"
   },
   "keywords": [
@@ -49,8 +48,7 @@
     "prop-types": "15.8.1",
     "react": "17.0.0",
     "react-dom": "17.0.0",
-    "react-test-renderer": "17.0.0",
-    "semantic-release": "19.0.3"
+    "react-test-renderer": "17.0.0"
   },
   "dependencies": {
     "classnames": "2.3.1"
