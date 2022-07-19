@@ -1,0 +1,27 @@
+name: Code Review
+on:
+  push:
+    pull_request:
+      - main
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.12.0
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+      - name: Lint Code
+        run: yarn lint
+      - name: Run Tests
+        run: yarn test
+      - name: Run Chromatic
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
